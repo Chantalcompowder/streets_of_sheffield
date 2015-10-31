@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Streets of Sheffield</title>
+				<link href="dist/css/bootstrap.css" rel="stylesheet">
+				<link href="stylesheets/main.css" type="text/css" rel="stylesheet"
+				>
+				<script src="js/jquery-1.11.3.min.js"></script>
+				<script src="js/main.js"></script>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+				<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic' rel='stylesheet' type='text/css'>
+		</head>
+		<body>
+			<div class="banner">
+				<h1>#StreetsofSheffield!</h1>
+					<h4>Celebrating culture as seen by citizens of the Steel City</h4>
+			</div>
+			<div class="navigation">
+				<ul class="nav nav-pills nav-justified">
+					<li role="presentation" class="active"><a href="#">About</a></li>
+					<li role="presentation" class="active"><a href="#">Why is culture important?</a></li>
+					<li role="presentation" class="active"><a href="#">Get Involved</a></li>
+					<li role="presentation" class="active"><a href="#">Areas of the City</a></li>
+				</ul>
+			</div>
+			<div class="jumbotron">
+				<div id="slideshow">
+					<div>
+						<img src="images/the_abbeydale_picturehouse.jpg">
+					</div>
+					<div>
+						<img src="images/charles_st.jpg">
+					</div>
+					<div>
+						<img src="images/city_centre.jpg">
+					</div>
+					<div>
+						<img src="images/crookes_park.jpg">
+					</div>
+					<div>
+						<img src="images/endcliffe_park.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Here's where social button's will be</p>
+			</div>
+		<script>
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval (function() {
+			$('#slideshow > div:first')
+			.fadeOut (1000)
+			.next()
+			.fadeIn (1000)
+			.end()
+			.appendTo('#slideshow');
+		}, 3000);
+		</script>
+		</body>
+	</html>

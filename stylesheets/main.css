@@ -1,0 +1,39 @@
+.banner {
+	background:rgba(5,153,202,1);
+	font-family: Rock Salt, verdana, sans-serif;
+	text-align: center;
+	color: white;
+	border-bottom: 10px solid rgba(48,204,40,0.5);
+	border-top: 10px solid rgba(48,204,40,0.5)
+}
+.navigation {
+	font-family: Roboto Mono, verdana, sans-serif;
+	text-align: center;
+	padding-left: 10px
+	padding-right: 10px;
+	color:white;
+	border-radius:20px;
+}
+.jumbotron {
+	background: white;
+}
+.footer {
+	background: rgba(48,204,40,0.5);
+}
+#slideshow {
+	margin:50px auto;
+	position: relative;
+	width: 550px;
+	height: 450px;
+	padding:10px;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+/*with website proper, I think images need to be stored and resized.
+free photo editing software? gimp?*/
+#slideshow > div {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
