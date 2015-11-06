@@ -1,29 +1,14 @@
 body {
 	background-color: white;
 	font-family: helvetica;
-}
-h1 {
-	text-align: center;
-	font-size: 15px;
-}
-.about {
-	width: 650px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
 	text-align: justify;
-	font-size: 10px;
-	}
-.imageabout {
-	height: 150px;
-	max-width: 650px;
-	padding: 10px;
 }
-.slogan {
-	width: 650px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	text-align: justify;
-	font-size: 20px;
+.about h1 {
+	text-align: left;
+	font-size: 30px;
+}
+
+.culture h1 {
+	text-align: left;
+	font-size: 30px;
 }
