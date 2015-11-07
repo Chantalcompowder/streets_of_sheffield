@@ -3,6 +3,32 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
 #map-canvas {
 	height: 100%;
 }
+
+
+/*#arundelstreet-container {
+	padding: 10px;
+	background-color: white;
+	margin: 1px;
+	border-radius: 2px 2px 0 0;
+
+}
+
+#rutlandarms-container {
+	padding: 10px;
+	background-color: white;
+	margin: 1px;
+	border-radius: 2px 2px 0 0;
+
+}
+
+#slyvesterstreet-container {
+	padding: 10px;
+	background-color: white;
+	margin: 1px;
+	border-radius: 2px 2px 0 0;
+
+}*/

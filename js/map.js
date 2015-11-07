@@ -1,3 +1,10 @@
+
+var locations = [
+	['Arundel Street', 53.374420, -1.470980, "images/map/arundelstreet.png"],
+	['Rutland Arms', 53.376540, -1.467584, "images/map/rutlandarms.png"],
+	['Slyvester Street', 53.373807, -1.471809, "images/map/slyvesterstreet.png"]
+];
+
 function initialize() {
 	// var myLatLng = {lat: 53.380908, lng: -1.47017};
 
@@ -7,41 +14,33 @@ function initialize() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 
-// 	setMarkers( map, locations );
+	// 	setMarkers( map, locations );
 
-// }
+	// }
 
-var locations = [
-	['Arundel Street', 53.374420, -1.470980, "images/map/arundelstreet.jpg"],
-	['Rutland Arms', 53.376540, -1.467584, "images/map/rutlandarms.jpg"],
-	['Slyvester Street', 53.373807, -1.471809, "images/map/slyvesterstreet.jpg"]
-];
+	var infowindow = new google.maps.InfoWindow();
 
-var marker, i;
+	var marker, i;
 
-var infowindow = new google.maps.InfoWindow();
+	for (i = 0; i < locations.length; i++) {
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				map: map
+				// ,
+				// icon: locations[i][3]
+		});
 
-for (var i = 0; i < locations.length; i++) {
-	marker = new google.maps.Marker({
-		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-			map: map,
-			icon: locations[i][3]
-	});
+		google.maps.event.addListener(marker, 'click', (function (marker,i) {
+			return function () {
+				var html = '<div><h4>' + locations[i][0] + '</h4>';
+				html += '<img src="' + locations [i] [3] + '" /></div>';
 
-	google.maps.event.addListener(marker, 'click', (function (marker,i) {
-		return function () {
-
-			var html = '<h4>' + locations[i][0] + '</h4>';
-
-			html += '<img src="' + locations [i] [3] + '" height="100px" width="100px" />';
-// console.log( html);
-			infowindow.setContent (this.html);
-			infowindow.open(map, marker);
-		}
-	})(marker, i));
-
-		}
+				infowindow.setContent(html);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
 	}
-
+}
+google.maps.event.addDomListener(window, "load", initialize);
 
 
