@@ -1,0 +1,14 @@
+body {
+	background-color: white;
+	font-family: helvetica;
+	text-align: justify;
+}
+.about h1 {
+	text-align: left;
+	font-size: 30px;
+}
+
+.culture h1 {
+	text-align: left;
+	font-size: 30px;
+}
