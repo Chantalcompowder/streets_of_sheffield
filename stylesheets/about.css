@@ -1,14 +1,24 @@
 body {
 	background-color: white;
-	font-family: helvetica;
+	font-family:Lora, Trebuchet, cursive;
 	text-align: justify;
 }
 .about h1 {
 	text-align: left;
 	font-size: 30px;
+	color: black;
 }
 
 .culture h1 {
 	text-align: left;
 	font-size: 30px;
+	color:black;
+}
+.about h4
+{
+	color: black
+}
+.culture h4
+{
+	color:black;
 }
