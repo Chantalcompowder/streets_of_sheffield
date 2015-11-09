@@ -1,24 +1,41 @@
 .banner {
-	background:rgba(5,153,202,1);
-	font-family: Rock Salt, verdana, sans-serif;
-	text-align: center;
-	color: white;
-	border-bottom: 10px solid rgba(48,204,40,0.5);
-	border-top: 10px solid rgba(48,204,40,0.5)
+	text-align:right;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(5,153,202,0.7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(5,153,202,0.7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(5,153,202,0.7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(5,153,202,0.7));
+    border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+	border-top: 10px solid rgba(0, 0, 0, 0.5);
 }
-.navigation {
-	font-family: Roboto Mono, verdana, sans-serif;
-	text-align: center;
-	padding-left: 10px
-	padding-right: 10px;
+h1 {
+	font-family: Rock Salt, Impact, cursive;
 	color:white;
-	border-radius:20px;
+}
+h4 {
+	font-family:Lora, Trebuchet, cursive;
+	color:white;
+}
+nav {
+	text-align: center;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(115, 245, 153, 0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(115, 245, 153, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(115, 245, 153, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(115, 245, 153, 0.9)); /* Standard syntax (must be last) */
+}
+nav li {
+	font-family:Lora, Trebuchet, cursive;
+	color:white;
+	font-weight: bold;
+	font-size:20px;
 }
 .jumbotron {
 	background: white;
+	font-family:Lora, Trebuchet, cursive;
 }
 .footer {
 	background: rgba(48,204,40,0.5);
+	font-family:Lora, Trebuchet cursive;
+	text-align: center;
 }
 #slideshow {
 	margin:50px auto;
@@ -26,7 +43,6 @@
 	width: 550px;
 	height: 450px;
 	padding:10px;
-	box-shadow:0 0 20px rgba(0,0,0,0.4);
 }
 /*with website proper, I think images need to be stored and resized.
 free photo editing software? gimp?*/
