@@ -1,7 +1,7 @@
 
 var locations = [
 	['Arundel Street', 53.374420, -1.470980, "images/map/arundelstreet.jpg"],
-	['Rutland Arms', 53.376540, -1.467584, "images/map/rutlandarms.jpg"],
+	['The Rutland Arms', 53.376540, -1.467584, "images/map/rutlandarms.jpg"],
 	['Sylvester Street', 53.373807, -1.471809, "images/map/sylvesterstreet.jpg"]
 ];
 
@@ -26,7 +26,7 @@ function initialize() {
 
 		google.maps.event.addListener(marker, 'click', (function (marker,i) {
 			return function () {
-				var html = '<div><h4>' + locations[i][0] + '</h4>';
+				var html = '<div><h3>' + locations[i][0] + '</h3>';
 				html += '<img width="300px" src="' + locations[i][3] + '" /></div>';
 console.log(html);
 				infowindow.setContent(html);
