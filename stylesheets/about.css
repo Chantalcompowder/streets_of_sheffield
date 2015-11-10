@@ -3,22 +3,21 @@ body {
 	font-family:Lora, Trebuchet, cursive;
 	text-align: justify;
 }
-.about h1 {
+.culture h1 {
 	text-align: left;
 	font-size: 30px;
 	color: black;
 }
-
-.culture h1 {
+.hit-the-streets h1 {
 	text-align: left;
 	font-size: 30px;
-	color:black;
-}
-.about h4
-{
-	color: black
+	color: black;
 }
 .culture h4
 {
-	color:black;
+	color: black;
+}
+.hit-the-streets h4
+{
+	color: black;
 }
